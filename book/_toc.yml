@@ -5,10 +5,10 @@ format: jb-book
 root: intro
 
 parts:
-- caption: 'Module 1: Basisprincipes Programmeren'
-  chapters:
-#  - file: les_01
+#- caption: 'Module 1: Basisprincipes Programmeren'
+#  chapters:
+#  - file: module01/les_01
 
 - caption: 'Module 2: Eenvoudige Datastructuren'
   chapters:
-  - file: module01/les_02
+  - file: module02/les_02
