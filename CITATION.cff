@@ -1,0 +1,47 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Cursus Python' # replace with your own book title when you use this template
+authors: #replace with your own name(s) if you use this template
+- email: yvan.vandersanden@arcadiascholen.be
+  name: 'Yvan Vander Sanden'
+  website: 'https://github.com/yvanvds'
+message: 'If you use this book, please cite it using these metadata.'
+preferred-citation:
+  type: book
+  authors: #replace with your own name(s) if you use this template
+  - email: yvan.vandersanden@arcadiascholen.be
+    name: 'Yvan Vander Sanden'
+    website: 'https://github.com/yvanvds'
+#  - given-names: Tom
+#    name-particle: van
+#    family-names: Woudenberg
+#    email: t.r.van.woudenberg@tudelft.nl
+#    affiliation: TeachBooks
+#    orcid: 'https://orcid.org/0000-0002-9536-061X'
+  url: 'https://yvanvds.github.io/CursusPython/' # replace with your own URL (book website / publisher link) when you use this template
+  identifiers:
+    - type: url
+      value: 'https://yvanvds.github.io/CursusPython/' # replace with your own URL when you use this template
+      description: 'Published book on GitHub Pages'
+    - type: url
+      value: 'https://github.com/yvanvds/CursusPython' # replace with your own URL when you use this template
+      description: 'GitHub repository'
+  abstract: >- # replace with your own abstract when you use this template
+    Een cursus Python voor de klas 6 WEWI en EWI.
+  keywords: # replace with your own keywords when you use this template
+    - Python
+    - Cursus
+    - 'Jupyter Book'
+  title: 'Cursus Python' # replace with your own book title when you use this template
+  institution:
+    name: 'SMA' # replace with your own institution when you use this template
+  license: CC-BY-4.0
+  license-url: 'https://creativecommons.org/licenses/by/4.0/'
+  copyright: '© 2025 yvan vander sanden' # replace with your own affiliation / name when you use this template
+  languages:
+    - en # replace with your book language when you use this template
+  contact: # replace with your own contact information when you use this template
+  - email: yvan.vandersanden@arcadiascholen.be
+    name: 'Yvan Vander Sanden'
