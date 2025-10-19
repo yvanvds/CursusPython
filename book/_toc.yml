@@ -15,3 +15,6 @@ parts:
   chapters:
   - file: module02/les_01_lijsten
   - file: module02/les_02_lijsten_gebruiken
+  - file: module02/les_03_sorteren
+
+  

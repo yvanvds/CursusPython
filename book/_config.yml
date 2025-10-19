@@ -3,17 +3,17 @@
 
 title: Cursus Python
 author: yvan vander sanden
-logo: figures/python.jpg
+logo: figures/python.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: "off"                           # Replace this if you want don't have notebooks with output and you want to add notebook output during build, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
   cache:             "_build/.jupyter_cache/"        # Default value (line can be removed), sets path to the jupyter cache that will be used to store execution artifacts, doesn't work in GitHub workflow, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
-  exclude_patterns:  []                              # Default value (line can be removed), sets a list of patterns to *skip* in execution, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html), can overwritten by Sphinx-NB-Execution-Patterns (https://teachbooks.io/manual/_git/github.com_TeachBooks_Sphinx-NB-Execution-Patterns/Manual/README.html)
-  timeout:           30                              # Default value (line can be removed), sets he maximum time (in seconds) each notebook cell is allowed to run, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
+  exclude_patterns:  [".no-thebe"]                              # Default value (line can be removed), sets a list of patterns to *skip* in execution, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html), can overwritten by Sphinx-NB-Execution-Patterns (https://teachbooks.io/manual/_git/github.com_TeachBooks_Sphinx-NB-Execution-Patterns/Manual/README.html)
+  timeout:           120                              # Default value (line can be removed), sets he maximum time (in seconds) each notebook cell is allowed to run, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
   run_in_temp:       false                           # Default value (line can be removed), disables a temporary directory was the command working directory (cwd), configuration part Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
-  allow_errors:      false                           # Default value (line can be removed), all cells are always run, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
+  allow_errors:      true                          # Default value (line can be removed), all cells are always run, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
   stderr_output:     show                            # Default value (line can be removed), shows stderr output, configuration part of Jupyter Book (https://jupyterbook.org/en/stable/customize/config.html)
   
 only_build_toc_files: true                           # Replace this with false if you want to build all files in the book, allowing you to refer to pages which are not included in the table of contents, configuration part of jupyterbook: https://jupyterbook.org/en/stable/customize/config.html
@@ -43,11 +43,12 @@ sphinx:                                              # Options passed on to the 
     - teachbooks_favourites                          # Gives you a starter package of extensions to use in your book, replace with individual extensions if you prefer some extensions not to be included (https://github.com/TeachBooks/TeachBooks-Favourites)
   local_extension: null                              # Sets a a list of local extensions to load by sphinx, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
   config:
-    language: en                                     # Defines language (English) of everything except the content itself. For Dutch: replace with `nl`, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
+    language: nl                                     # Defines language (English) of everything except the content itself. For Dutch: replace with `nl`, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
     html_js_files:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js # Required for live code, part of TeachBooks-Sphinx-Thebe (https://teachbooks.io/manual/features/live_code.html)
     thebe_config:
       use_thebe_lite: true                           # Required for live code, part of TeachBooks-Sphinx-Thebe (https://teachbooks.io/manual/features/live_code.html)
+      exclude_selector: ".no-thebe"  
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb"] #exclude files which should not be accessible for live code, configuration part of TeachBooks-Sphinx-Thebe (https://teachbooks.io/manual/features/live_code.html)
     html_favicon: "figures/TB_favicon.ico"           # Replace this with your own favicon, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
     html_baseurl:  "https://yvanvds.github.io/CursusPython/"    # Replace this with your own URL, configuration part of Sphinx (https://www.sphinx-doc.org/en/master/index.html)
