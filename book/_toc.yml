@@ -18,4 +18,8 @@ parts:
   - file: module02/les_03_sorteren
   - file: module02/les_04_turtle
 
+- caption: 'Module 3: Wiskundige probleemoplossing'
+  chapters:
+  - file: module03/les_01_functies
+
   
