@@ -21,5 +21,6 @@ parts:
 - caption: 'Module 3: Wiskundige probleemoplossing'
   chapters:
   - file: module03/les_01_functies
+  - file: module03/les_02_bisectie
 
   
