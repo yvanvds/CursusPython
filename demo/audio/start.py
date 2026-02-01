@@ -1,10 +1,13 @@
-import sounddevice as sd
-import audio_functies as af
+import numpy as np
+import matplotlib.pyplot as plt
 
-toon = af.sine_wave(freq=440, duration=1.0)
-#toon = af.gain(toon, factor=0.5)
-#toon = af.fade_in(toon, duration=0.1)
-#toon = af.fade_in(af.gain(toon, factor=0.5), duration=0.1)
+x = np.linspace(-2, 6, 300)
 
-sd.play(toon, af.SAMPLERATE)
-sd.wait()
+y1 = 0.5 * x**2 - 4*x + 3
+y2 = 1 * x**2 - 4*x + 3
+
+plt.plot(x, y1)
+plt.plot(x, y2)
+plt.legend(["x²", "x² - 4x + 3"])
+plt.grid()
+plt.show()

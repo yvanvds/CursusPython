@@ -19,6 +19,7 @@ for note in notes:
     waves.append(wave)
 
 melody = af.melody(waves)
+
 melody = af.fade_out(melody, duration=1.0)
 
 sd.play(melody, af.SAMPLERATE)

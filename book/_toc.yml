@@ -23,5 +23,6 @@ parts:
   - file: module03/les_01_functies
   - file: module03/les_02_bisectie
   - file: module03/les_03_functies
+  - file: module03/les_04_integralen
 
   

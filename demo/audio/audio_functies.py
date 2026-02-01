@@ -40,6 +40,12 @@ def silence(duration):
     return np.zeros(n_samples)
 
 def mix(wave1, wave2):
+    """
+    mix twee waveforms door ze op te tellen. Ze moeten even lang zijn.
+
+    wave1 : array met samples
+    wave2 : array met samples
+    """
     return wave1 + wave2
 
 def fade_in(y, duration):
@@ -145,6 +151,25 @@ def plot_wave_segment(y, t0=0.0, t1=0.02, title="Waveform"):
     plt.title(title)
     plt.grid(True)
     plt.tight_layout()
+    plt.show()
+
+def plot_wave_segments(waves, titles, t0=0.0, t1=0.02):
+    n = len(waves)
+    plt.figure(figsize=(8, 3 * n))
+
+    for i, (y, title) in enumerate(zip(waves, titles)):
+        i0 = int(t0 * SAMPLERATE)
+        i1 = int(t1 * SAMPLERATE)
+
+        segment = y[i0:i1]
+        t = np.linspace(t0, t1, len(segment), endpoint=False)
+
+        plt.plot(t, segment)
+        
+    plt.xlabel("tijd (s)")
+    plt.ylabel("amplitude")
+    plt.title(title)
+    plt.grid(True)
     plt.show()
 
 def melody(waves):
