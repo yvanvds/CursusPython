@@ -25,4 +25,6 @@ parts:
   - file: module03/les_03_functies
   - file: module03/les_04_integralen
 
-  
+- caption: 'Module 4: Data analyse en visualisatie'
+  chapters:
+  - file: module04/les_01_klimaatdata
