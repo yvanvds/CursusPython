@@ -28,3 +28,4 @@ parts:
 - caption: 'Module 4: Data analyse en visualisatie'
   chapters:
   - file: module04/les_01_klimaatdata
+  - file: module04/les_02_json
