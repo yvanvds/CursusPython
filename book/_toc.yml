@@ -29,3 +29,4 @@ parts:
   chapters:
   - file: module04/les_01_klimaatdata
   - file: module04/les_02_json
+  - file: module04/les_03_ai
