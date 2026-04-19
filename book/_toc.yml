@@ -30,3 +30,8 @@ parts:
   - file: module04/les_01_klimaatdata
   - file: module04/les_02_json
   - file: module04/les_03_ai
+
+- caption: 'Module 5: Golven en trillingen'
+  chapters:
+  - file: module05/les_01_trillingen
+
