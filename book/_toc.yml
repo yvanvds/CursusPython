@@ -34,5 +34,5 @@ parts:
 - caption: 'Module 5: Golven en trillingen'
   chapters:
   - file: module05/les_01_trillingen
-  - file: book/module05/les_02_klankkleur
+  - file: module05/les_02_klankkleur
 
