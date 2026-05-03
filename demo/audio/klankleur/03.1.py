@@ -11,9 +11,7 @@ def make_sine(frequency, amplitude=1.0, duration=1.0):
     return wave
 
 def make_harmonic(fundamental, n):
-    samples = np.linspace(0, 1.0, int(SAMPLERATE * 1.0), endpoint=False)
-    wave = np.sin(2 * np.pi * n * fundamental * samples) * 1.0
-    return wave
+    return make_sine(n * fundamental)
 
 f0 = 220
 
