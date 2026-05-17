@@ -36,4 +36,5 @@ parts:
   - file: module05/les_01_trillingen
   - file: module05/les_02_klankkleur
   - file: module05/les_03_envelopes
+  - file: module05/oefenvragen_overhoring
 
